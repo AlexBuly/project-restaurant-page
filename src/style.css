@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.title {
+    justify-content: center;
+}
+
+.restaurant-info {
+    background-color: lightcoral;
+}
+
+#content {
+    background-color: pink;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
