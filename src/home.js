@@ -17,6 +17,16 @@ const home = () => {
     info.textContent = "I Scream Ice Cream has the best ice cream around.";
     content.appendChild(info);
 
+    const hours = document.createElement("h3");
+    hours.classList.add("restaurant-hours");
+    hours.textContent = "Hours";
+    content.appendChild(hours);
+
+    const location = document.createElement("h3");
+    location.classList.add("restaurant-location");
+    location.textContent = "Location";
+    content.appendChild(location);
+
 
     
     return home;

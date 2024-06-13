@@ -13,10 +13,6 @@ html, body {
     justify-content: center;
 }
 
-.restaurant-info {
-    background-color: lightcoral;
-}
-
 #content {
     background-color: pink;
     min-height: 100%;
