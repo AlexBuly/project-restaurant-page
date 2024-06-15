@@ -1,13 +1,13 @@
 import Image from './icecream.jpeg';
 
-const home = () => {
+const Home = () => {
     const content = document.querySelector("#content");
 
     const homeTitle = document.createElement("h1");
     homeTitle.classList.add("title");
     homeTitle.textContent = "I Scream Ice Cream";
     content.appendChild(homeTitle);
-
+    
     const image = document.createElement("img");
     image.src = Image;
     content.appendChild(image);
@@ -60,7 +60,23 @@ const home = () => {
    location.classList.add("restaurant-location");
    content.appendChild(location);
 
-    return home;   
+   const locationTitle = document.createElement("h3");
+   locationTitle.classList.add("location-title");
+   locationTitle.textContent = "Location:";
+   location.appendChild(locationTitle);
+
+   const locationText = document.createElement("div");
+   locationText.classList.add("location-text");
+   location.appendChild(locationText);
+
+   const street = document.createElement("p");
+   street.textContent = "123 Example Street";
+   locationText.appendChild(street);
+   const city = document.createElement("p");
+   city.textContent = "Liman, West Virginia 23446";
+   locationText.appendChild(city);
+
+    return Home;   
 }
 
-export default home;
+export default Home;

@@ -1,5 +1,5 @@
 import _ from 'lodash';
 import './style.css';
-import home from './home.js';
+import Home from './home.js';
 
-home();
+Home();

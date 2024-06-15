@@ -17,6 +17,14 @@ h3 {
     justify-content: center;
 }
 
+p {
+    margin: 0;
+}
+
+.restaurant-hours {
+    margin: 12px;
+}
+
 .hours-title {
     text-align: center;
 }
@@ -47,4 +55,8 @@ img {
     height: 400px;
     width: 400px;
     object-fit: cover;
+}
+
+.location-title {
+    text-align: center;
 }
