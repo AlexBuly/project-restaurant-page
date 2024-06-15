@@ -15,22 +15,52 @@ const home = () => {
     const info = document.createElement("p");
     info.classList.add("restaurant-info");
     info.textContent = "I Scream Ice Cream has the best ice cream around.";
-    content.appendChild(info);
+    content.appendChild(info); 
+ 
+   const hours = document.createElement("div");
+   hours.classList.add("restaurant-hours");
+   content.appendChild(hours);
 
-    const hours = document.createElement("h3");
-    hours.classList.add("restaurant-hours");
-    hours.textContent = "Hours";
-    content.appendChild(hours);
+   const hoursTitle = document.createElement("h3");
+   hoursTitle.classList.add("hours-title");
+   hoursTitle.textContent = "Hours:"
+   hours.appendChild(hoursTitle);
+  
+   const hoursText = document.createElement("div");
+   hoursText.classList.add("hours-text");
+   hours.appendChild(hoursText);
 
-    const location = document.createElement("h3");
-    location.classList.add("restaurant-location");
-    location.textContent = "Location";
-    content.appendChild(location);
+   const days = document.createElement("div");
+   days.classList.add("days");
+   hoursText.appendChild(days);
 
+   const weekdays = document.createElement("div");
+   weekdays.classList.add("weekdays");
+   weekdays.textContent = "Mon-Fri:";
+   days.appendChild(weekdays);
 
-    
-    return home;
-    
+   const weekends = document.createElement("div");
+   weekends.classList.add("weekends")
+   weekends.textContent = "Sat-Sun:";
+   days.appendChild(weekends);
+
+   const times = document.createElement("div");
+   times.classList.add("times");
+   hoursText.appendChild(times);
+
+   const timesWeekday = document.createElement("div");
+   timesWeekday.textContent = "8am-8pm";
+   times.appendChild(timesWeekday);
+
+   const timesWeekends = document.createElement("div");
+   timesWeekends.textContent = "1pm-8pm";
+   times.appendChild(timesWeekends);
+
+   const location = document.createElement("div");
+   location.classList.add("restaurant-location");
+   content.appendChild(location);
+
+    return home;   
 }
 
 export default home;

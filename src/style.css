@@ -3,6 +3,10 @@ html, body {
     margin: 0;
 }
 
+h3 { 
+    margin: 0;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -11,6 +15,24 @@ html, body {
 
 .title {
     justify-content: center;
+}
+
+.hours-title {
+    text-align: center;
+}
+
+.hours-text { 
+    display: flex;
+    gap: 1em;
+}
+
+.weekdays, .weekends {
+    width: 75px;
+}
+
+
+.days {
+    width: 50px;
 }
 
 #content {
