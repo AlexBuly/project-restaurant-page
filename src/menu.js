@@ -1,3 +1,5 @@
+import print from "./sepFunc";
+
 const Menu = () => {
     const content = document.querySelector("#content");
 
@@ -25,11 +27,6 @@ const Menu = () => {
 
     const flavorsList = document.createElement("p");
     flavors.appendChild(flavorsList);
-
-    function print(array, seperator, element) {
-        let text = array.join(seperator);
-        element.innerHTML = text;
-    }
 
     const flavorsArray = ['Chocolate',
                         'Vanila',
