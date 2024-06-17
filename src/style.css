@@ -14,7 +14,8 @@ h3 {
 }
 
 .title {
-    justify-content: center;
+    text-align: center;
+
 }
 
 p {
@@ -25,7 +26,7 @@ p {
     margin: 12px;
 }
 
-.hours-title {
+.hours-title, .menu-title {
     text-align: center;
 }
 
@@ -47,8 +48,8 @@ p {
     background-color: pink;
     min-height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
 
 img {
@@ -57,8 +58,12 @@ img {
     object-fit: cover;
 }
 
-.location-title {
+.flavors-title {
     text-align: center;
+}
+
+.ice-cream-flavors p {
+    margin: 1em;
 }
 
 @media screen and (max-width: 500px) {
