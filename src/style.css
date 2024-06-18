@@ -62,8 +62,8 @@ img {
     text-align: center;
 }
 
-.ice-cream-flavors p {
-    margin: 1em;
+p {
+    margin-bottom: 1em;
 }
 
 @media screen and (max-width: 500px) {
