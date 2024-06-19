@@ -1,25 +1,31 @@
 import Image from './icecream.jpeg';
+import print from './sepFunc';
 
 const Home = () => {
     const content = document.querySelector("#content");
+    const br = "<br>";
+
+    const homeDiv = document.createElement("div");
+    homeDiv.classList.add("home-container");
+    content.appendChild(homeDiv);
 
     const homeTitle = document.createElement("h1");
     homeTitle.classList.add("title");
     homeTitle.textContent = "I Scream Ice Cream";
-    content.appendChild(homeTitle);
+    homeDiv.appendChild(homeTitle);
     
     const image = document.createElement("img");
     image.src = Image;
-    content.appendChild(image);
+    homeDiv.appendChild(image);
 
     const info = document.createElement("p");
     info.classList.add("restaurant-info");
     info.textContent = "I Scream Ice Cream has the best ice cream around.";
-    content.appendChild(info); 
+    homeDiv.appendChild(info); 
  
    const hours = document.createElement("div");
    hours.classList.add("restaurant-hours");
-   content.appendChild(hours);
+   homeDiv.appendChild(hours);
 
    const hoursTitle = document.createElement("h3");
    hoursTitle.classList.add("hours-title");
@@ -34,31 +40,13 @@ const Home = () => {
    days.classList.add("days");
    hoursText.appendChild(days);
 
-   const weekdays = document.createElement("div");
-   weekdays.classList.add("weekdays");
-   weekdays.textContent = "Mon-Fri:";
-   days.appendChild(weekdays);
+   const daysArr = ["Mon-Fri: 8am-8pm", "Sat-Sun: 1pm-8pm"];
+   print(daysArr, br, days);
 
-   const weekends = document.createElement("div");
-   weekends.classList.add("weekends")
-   weekends.textContent = "Sat-Sun:";
-   days.appendChild(weekends);
-
-   const times = document.createElement("div");
-   times.classList.add("times");
-   hoursText.appendChild(times);
-
-   const timesWeekday = document.createElement("div");
-   timesWeekday.textContent = "8am-8pm";
-   times.appendChild(timesWeekday);
-
-   const timesWeekends = document.createElement("div");
-   timesWeekends.textContent = "1pm-8pm";
-   times.appendChild(timesWeekends);
 
    const location = document.createElement("div");
    location.classList.add("restaurant-location");
-   content.appendChild(location);
+   homeDiv.appendChild(location);
 
    const locationTitle = document.createElement("h3");
    locationTitle.classList.add("location-title");
@@ -69,12 +57,8 @@ const Home = () => {
    locationText.classList.add("location-text");
    location.appendChild(locationText);
 
-   const street = document.createElement("p");
-   street.textContent = "123 Example Street";
-   locationText.appendChild(street);
-   const city = document.createElement("p");
-   city.textContent = "Liman, West Virginia 23446";
-   locationText.appendChild(city);
+   const locationArr = ["123 Example Steet", "Liman, West Virginia 23446"];
+   print(locationArr, br, locationText);
 
     return Home;   
 }

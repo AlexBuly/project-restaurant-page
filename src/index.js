@@ -5,7 +5,7 @@ import Footer from './footer.js';
 import Menu from './menu.js';
 import Contact from './contact.js';
 
-//Home();
+Home();
 //Menu();
-Contact();
+//Contact();
 Footer();

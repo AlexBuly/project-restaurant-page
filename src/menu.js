@@ -12,6 +12,8 @@ const Menu = () => {
     menuTitle.textContent = "Menu";
     menuDiv.appendChild(menuTitle);
 
+    
+
     const menu = document.createElement("div");
     menu.classList.add("restaurant-menu");
     menuDiv.appendChild(menu);
