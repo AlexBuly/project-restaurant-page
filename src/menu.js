@@ -23,7 +23,7 @@ const Menu = () => {
     menu.appendChild(flavors);
 
     const flavorsTitle = document.createElement("h3");
-    flavorsTitle.textContent = "Flavors";
+    flavorsTitle.textContent = "Ice Cream Flavors";
     flavors.appendChild(flavorsTitle);
 
     const flavorsList = document.createElement("p");
