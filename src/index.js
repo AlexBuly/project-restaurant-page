@@ -35,4 +35,4 @@ const switchEvents = () => {
 }
 
 onLoad();
-switchEvents()
+switchEvents();

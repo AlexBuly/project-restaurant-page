@@ -1,7 +1,6 @@
 import print from "./sepFunc";
 
 const Menu = () => {
-
     const content = document.querySelector("#content");
 
     const menuDiv = document.createElement("div");
@@ -12,7 +11,7 @@ const Menu = () => {
     menuTitle.classList.add("title");
     menuTitle.textContent = "Menu";
     menuDiv.appendChild(menuTitle);
-    
+
     const menu = document.createElement("div");
     menu.classList.add("restaurant-menu");
     menuDiv.appendChild(menu);
@@ -165,8 +164,6 @@ const Menu = () => {
 
     const kidsArr = ["Mini Cones - $2.50", "Sprinkle Sundae - $4.00", "Ice Cream Cupcake - $3.50", ];
     print(kidsArr, br, kidsList);
-
-    return menuDiv;
 }
 
 export default Menu;
