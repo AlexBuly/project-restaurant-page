@@ -60,7 +60,7 @@ const Home = () => {
    const locationArr = ["123 Example Steet", "Liman, West Virginia 23446"];
    print(locationArr, br, locationText);
 
-    return Home;   
+  return Home;   
 }
 
 export default Home;
